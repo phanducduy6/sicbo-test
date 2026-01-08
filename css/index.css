@@ -533,24 +533,3 @@ a.close{
 .bet-many-tip a:hover{
 	background-image: linear-gradient( to bottom, #00ABCC, #007B94 );
 }
-/* --- CODE CHỈNH CHO ĐIỆN THOẠI --- */
-@media screen and (max-width: 768px) {
-    body {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden; /* Chặn cuộn lung tung */
-        background-color: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Code này tìm cái khung game và thu nhỏ nó lại */
-    /* Dấu * giúp chọn tất cả các lớp bao ngoài để chắc chắn trúng */
-    body > div {
-        transform: scale(0.6); /* Thu nhỏ còn 60% */
-        transform-origin: center center;
-        width: auto !important;
-        margin: 0 auto;
-    }
-}
